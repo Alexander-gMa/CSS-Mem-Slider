@@ -1,14 +1,36 @@
 *{
   box-sizing: border-box;
 }
-
-body{
+html{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+html,body{
   height: 100%;
+}
+body{
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   background: rgb(20, 21, 32);
   overflow: hidden;
-  
+}
+main{
+  width: 80%;
+  margin-bottom: 20%;
+  overflow: hidden;
+}
+.mem-scroll{
+  width: calc(100%*5);
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x;
+}
+.memes.first{
+  display: flex;
+}
+.img1{
+  width: 49%;
+  height: 100%;
 }
